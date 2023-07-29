@@ -9,8 +9,8 @@ login:
 	ssh $(USER)@$(HOST)
 
 deploy:
-	#git push origin main
-	ssh $(USER)@$(HOST) 'cd $(DIR) && git pull && npm install && npm run build && pm2 restart eventlens'
+	git push origin main
+	ssh $(USER)@$(HOST) 'cd $(DIR) && git pull && npm run clean && npm ci && npm run build && pm2 restart eventlens'
 
 rollback:
 	ssh $(USER)@$(HOST) 'cd $(DIR) && git reset --hard HEAD~1 && npm install && npm run build && pm2 restart eventlens'
