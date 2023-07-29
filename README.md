@@ -1,34 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Astroship - Astro Starter Template 🛸
 
-## Getting Started
+Astroship is a starter template for startups, marketing websites & landing pages. Built with Astro, TailwindCSS & Alpine.js.
 
-First, run the development server:
+This Free Template is sponsored by [Web3Templates](https://web3templates.com)
+
+## Live Demo
+
+### [https://astroship.web3templates.com/](https://astroship.web3templates.com/)
+
+## Deploy on Vercel
+
+Click the below link to deploy this template on Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/surjithctly/astroship)
+
+![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
+
+## Installation
+
+If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
+
+Alternatively, you can clone the project directly from this repo to your local system.
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/surjithctly/astroship.git myProjectName
+# or
+git clone https://github.com/surjithctly/astroship.git .
+```
+
+The `.` will clone it to the current directory so make sure you are inside your project folder first.
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or (recommended)
+pnpm install
+```
+
+### 3. Start development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
+# or (recommended)
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Preview & Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run preview
+npm run build
+# or
+yarn preview
+yarn build
+# or (recommended)
+pnpm preview
+pnpm build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+We recommend using [pnpm](https://pnpm.io/) to save disk space on your computer.
 
-## Learn More
+### Other Commands
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm astro ...
+pnpm astro add
+pnpm astro --help
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Inside of your Astro project, you'll see the following folders and files:
 
-## Deploy on Vercel
+```
+/
+├── public/
+│   └── ...
+├── src/
+│   ├── components/
+│   │   └── ...
+│   ├── layouts/
+│   │   └── ...
+│   └── pages/
+│       └── ...
+└── package.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Any static assets, like images, can be placed in the `public/` directory.
+
+## TailwindCSS & Alpine.js
+
+TailwindCSS & Alpine.js are already configured in this repo, so you can start using them without any installation.
+
+## Credits
+
+[Hero Illustration](https://www.figma.com/community/file/1108400791662599811) by [Streamline](https://www.streamlinehq.com/)
+
+## 👀 Want to learn more?
+
+Feel free to check out [Astro Docs](https://docs.astro.build) or jump into our [Discord Chat](https://web3templates.com/discord).
