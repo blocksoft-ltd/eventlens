@@ -21,6 +21,9 @@
     "isolatedModules": true,
     "baseUrl": "src",
     "paths": {
+      "@styles/*": [
+        "styles/*"
+      ],
       "@components/*": [
         "components/*"
       ],

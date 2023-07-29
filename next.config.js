@@ -2,21 +2,16 @@ const path = require('path')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
+  experimental: {
+    appDir: true,
+    serverComponentsExternalPackages: ["@prisma/client"],
+  },
   reactStrictMode: true,
   swcMinify: true,
   poweredByHeader: false,
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'nextjswp.dreamhosters.com'
-      },
-      {
-        protocol: 'https',
-        hostname: '**.gravatar.com'
-      }
-    ]
-  },
    sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
