@@ -4,10 +4,10 @@ import { authOptions } from "@lib/auth"
 import { db } from "@lib/db"
 import { getCurrentUser } from "@lib/session"
 import { EmptyPlaceholder } from "@components/empty-placeholder"
-import { DashboardHeader } from "@components/header"
-import { PostCreateButton } from "@components/post-create-button"
-import { PostItem } from "@components/post-item"
-import { DashboardShell } from "@components/shell"
+import { DashboardHeader } from "@components/shared/dashboard/header"
+import { PostCreateButton } from "@components/shared/dashboard/post/post-create-button"
+import { PostItem } from "@components/shared/dashboard/post/post-item"
+import { DashboardShell } from "@components/dashboard/shell"
 
 export const metadata = {
   title: "Dashboard",

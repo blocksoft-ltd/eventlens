@@ -4,11 +4,11 @@ import * as React from "react"
 import Link from "next/link"
 import { useSelectedLayoutSegment } from "next/navigation"
 
-import { MainNavItem } from "types"
+import { MainNavItem } from "@lib/types"
 import { siteConfig } from "@lib/config/site"
 import { cn } from "@lib/utils"
 import { Icons } from "@components/icons"
-import { MobileNav } from "@components/mobile-nav"
+import { MobileNav } from "@components/shared/nav/mobile-nav"
 
 interface MainNavProps {
   items?: MainNavItem[]

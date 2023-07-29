@@ -1,5 +1,5 @@
+import {env} from "@lib/env";
 import { initializeApp, getApps } from "firebase/app";
-import env from "@lib/env";
 
 export const firebaseApp= getApps().length === 0 ? initializeApp({
   apiKey: env.FIREBASE_API_KEY,

@@ -1,9 +1,5 @@
 import { notFound } from "next/navigation"
-import { allPages } from "contentlayer/generated"
 
-import { Mdx } from "@components/mdx-components"
-
-import "@styles/mdx.css"
 import { Metadata } from "next"
 
 import { env } from "@lib/env"
@@ -15,6 +11,8 @@ interface PageProps {
     slug: string[]
   }
 }
+
+const allPages =[{slugAsParams: 'slugAsParams' ,title: 'title', description: 'description', slug: 'slug', body:{code: 'code'}}]
 
 async function getPageFromParams(params) {
   const slug = params?.slug?.join("/")
@@ -93,7 +91,6 @@ export default async function PagePage({ params }: PageProps) {
         )}
       </div>
       <hr className="my-4" />
-      <Mdx code={page.body.code} />
     </article>
   )
 }

@@ -4,7 +4,6 @@ import * as React from "react"
 
 import { TableOfContents } from "@lib/toc"
 import { cn } from "@lib/utils"
-import { useMounted } from "@hooks/use-mounted"
 
 interface TocProps {
   toc: TableOfContents
@@ -23,18 +22,17 @@ export function DashboardTableOfContents({ toc }: TocProps) {
     [toc]
   )
   const activeHeading = useActiveItem(itemIds)
-  const mounted = useMounted()
 
   if (!toc?.items) {
     return null
   }
 
-  return mounted ? (
+  return (
     <div className="space-y-2">
       <p className="font-medium">On This Page</p>
       <Tree tree={toc} activeItem={activeHeading} />
     </div>
-  ) : null
+  )
 }
 
 function useActiveItem(itemIds: (string | undefined)[]) {
