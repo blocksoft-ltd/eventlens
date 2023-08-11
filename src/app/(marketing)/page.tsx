@@ -6,7 +6,6 @@ import { buttonVariants } from "@components/ui/button"
 
 export default async function IndexPage() {
   const stars =3
-
   return (
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
