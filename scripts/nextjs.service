@@ -1,0 +1,11 @@
+[Unit]
+Description=Eventlens
+
+[Service]
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/var/www/eventlens
+Restart=always
+User=www-data
+
+[Install]
+WantedBy=multi-user.target
